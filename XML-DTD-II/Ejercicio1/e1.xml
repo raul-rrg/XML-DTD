@@ -31,7 +31,7 @@ Ejercicio-1: Factura electronica
 
     <detalle-factura importe="87.50">
         <linea codigo-articulo="A001" tipo="Libro">
-            <descripcion>Hábitos Atómicos - James Clear</descripcion>
+            <descripcion>Hábitos Atoossmicos - James Clear</descripcion>
             <cantidad>2</cantidad>
             <oferta/>
             <pvp>25.00</pvp>
