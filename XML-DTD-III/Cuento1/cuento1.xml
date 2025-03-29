@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [29/03/2025]
+Cuento-1: La Leyenda del Cid
+-->
+
+<!--Definimos las ruta del DTD externo-->
+<!DOCTYPE cuento SYSTEM "cuentos.dtd">
+
+<cuento cod="F01" título="La leyenda del Cid" género="fantasía">
+    <personajes>
+        <personaje id="Perso-1" tipo="principal">
+            <nombre>Rodrigo Diaz de Vivar</nombre>
+            <género>M</género>
+            <descripción>Un valiente caballero castellano que luchaa por su honnor y justicia.</descripción>
+        </personaje>
+        <personaje id="Perso-2" tipo="secundario">
+            <nombre>Doña Jimena</nombre>
+            <género>F</género>
+            <descripción>esposa del Cid, fiel y noble</descripción>
+        </personaje>
+    </personajes>
+    <trama>El Cid es desterrado por el rey alfonso, pero con honor y valentia conquista tierras y se gana el respeto de todos</trama>
+    <etiqueta nombre="historia"/>
+    <etiqueta nombre="caballeros"/>
+    <precio moneda="eur">10.99</precio>
+</cuento>

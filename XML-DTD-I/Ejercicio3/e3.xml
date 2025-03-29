@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [28/03/2025]
+Ejercicio-3: Validacion XML - Persona
+-->
+
+<!-- Adjuntamos el XML proporcionado-->
+
+<!--Definimos la ruta del DTD externo-->
+<!DOCTYPE agenda SYSTEM "datos.dtd">
+<agenda>
+  <nombre>Antonio</nombre>
+  <apellido>Sánchez</apellido>
+  <apellido>Pérez</apellido>
+  <telefono>666555444</telefono>
+  <fecha_nacimiento>
+    <anio>2000</anio>
+    <mes>01</mes>
+    <dia>20</dia>
+  </fecha_nacimiento>
+  <lugar_nacimiento>
+    <pais>España</pais>
+    <ciudad>Madrid</ciudad>
+    <localidad>Getafe</localidad>
+  </lugar_nacimiento>
+</agenda>

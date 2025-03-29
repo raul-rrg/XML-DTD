@@ -1,0 +1,27 @@
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [28/03/2025]
+Ejercicio-3: Validacion XML - Persona
+-->
+
+
+<!-- Definimos la estructura principal de la agenda y sus elementos -->  
+<!ELEMENT agenda (nombre, apellido+, telefono, fecha_nacimiento, lugar_nacimiento)>  
+
+<!-- Definimos los datos personales del contacto -->  
+<!ELEMENT nombre (#PCDATA)>  
+<!ELEMENT apellido (#PCDATA)>  
+<!ELEMENT telefono (#PCDATA)>  
+
+<!-- Definimos la fecha de nacimiento y su estructura -->  
+<!ELEMENT fecha_nacimiento (anio, mes, dia)>  
+<!ELEMENT anio (#PCDATA)>  
+<!ELEMENT mes (#PCDATA)>  
+<!ELEMENT dia (#PCDATA)>  
+
+<!-- Definimos la secuencia el lugar de nacimiento y sus elementos -->  
+<!ELEMENT lugar_nacimiento (pais, ciudad, localidad)>  
+<!ELEMENT pais (#PCDATA)>  
+<!ELEMENT ciudad (#PCDATA)>  
+<!ELEMENT localidad (#PCDATA)>  

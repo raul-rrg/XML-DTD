@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE marcadores SYSTEM "marcadores.dtd" [
+<!ELEMENT marcadores (pagina)*>
+<!ELEMENT pagina (nombre, descripcion, url)>
+]>
+<marcadores>
+<pagina>
+<nombre>Google</nombre>
+<descripcion>Pagina oficial de google</descripcion>
+<url>https://www.google.com/</url>
+</pagina>
+<pagina>
+<nombre>Duck Duck go</nombre>
+<descripcion>Navegador orientado a la privacidad</descripcion>
+<url>https://duckduckgo.com/</url>
+</pagina>
+<pagina>
+<nombre>Yahoo</nombre>
+<descripcion>Proveedor de servicios web</descripcion>
+<url>https://es.search.yahoo.com</url>
+</pagina>
+</marcadores>

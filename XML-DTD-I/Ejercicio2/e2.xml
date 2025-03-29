@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [28/03/2025]
+Ejercicio-2: Liga-Baloncesto
+-->
+
+<!--Definimos la ruta al DTD Externo-->
+<!DOCTYPE liga SYSTEM "liga.dtd">
+
+<!--Definimos la estrucura de todo el XML-->
+<liga>
+    <jugador>
+        <nombre>LeBron</nombre>
+        <apellidos>James</apellidos>
+        <equipo>
+            <ciudad>Los Angeles</ciudad>
+            <presidente>
+                <nombrePresidente>Jeanie</nombrePresidente>
+                <apellidosPresidente>Buss</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>39</edad>
+    </jugador>
+
+    <jugador>
+        <nombre>Anthony</nombre>
+        <apellidos>Davis</apellidos>
+        <equipo>
+            <ciudad>Los Angeles</ciudad>
+            <presidente>
+                <nombrePresidente>Jeanie</nombrePresidente>
+                <apellidosPresidente>Buss</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>31</edad>
+    </jugador>
+
+    <jugador>
+        <nombre>Austin</nombre>
+        <apellidos>Reaves</apellidos>
+        <equipo>
+            <ciudad>Los Angeles</ciudad>
+            <presidente>
+                <nombrePresidente>Jeanie</nombrePresidente>
+                <apellidosPresidente>Buss</apellidosPresidente>
+            </presidente>
+        </equipo>
+        <edad>25</edad>
+    </jugador>
+</liga>

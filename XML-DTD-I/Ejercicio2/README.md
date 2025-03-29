@@ -1,0 +1,1 @@
+### Creacion de un XML con tres jugadores de baloncesto, incluyendo su nombre, apellidos, edad y equipo, además de la ciudad y el presidente del club. Para asegurarnos de que la estructura sea correcta, usamos una DTD externa y la validamos en un verificador online.

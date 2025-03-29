@@ -1,0 +1,30 @@
+<!-- Definimos la estructura del cuento -->
+<!ELEMENT cuento (personajes, trama, etiqueta*, precio?)>
+<!-- DEfinimos los atributos del cuento-->
+<!ATTLIST cuento cod CDATA #REQUIRED
+                  título CDATA #REQUIRED
+                  género (infantil|fantasía|terror) #IMPLIED>
+
+<!-- Contenedor de personajes debemos de definir que habra al mini mo uno  -->
+<!ELEMENT personajes (personaje+)> 
+<!-- Definimos un personaje -->
+<!ELEMENT personaje (nombre, género, descripción?)>
+<!-- Atributos del personaje, donde debeoos de indicar ID unico obligatorio y tipo con valor por defecto "principal" -->
+<!ATTLIST personaje id ID #REQUIRED
+                   tipo (principal|secundario|antagonista) "principal">
+
+<!-- Definimos los elementos basicos que debe de tener un personaje -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT género (#PCDATA)>
+<!ELEMENT descripción (#PCDATA)>
+
+<!-- Definimos la trama del cuento -->
+<!ELEMENT trama (#PCDATA)>
+
+<!-- Definimos las etiquetas opcionales para clasificar el cuento -->
+<!ELEMENT etiqueta EMPTY>
+<!ATTLIST etiqueta nombre CDATA #REQUIRED>
+
+<!-- Definimos el precio como opcional con un atributo moneda que por defecto es "eur" -->
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio moneda CDATA "eur">

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [24/03/2025]
+Ejercicio-1: Biblioteca
+-->
+<!DOCTYPE EquiposNBA [
+  <!-- Raozz del documento que contiene varios equipos o nombres sueltos -->
+<!ELEMENT EquiposNBA (equipo | nombre)+>  
+
+<!-- Nombre de un equipo como texto simple -->
+<!ELEMENT nombre (#PCDATA)>  
+
+<!-- Cada equipo tiene nombre, títulos, posición y quinteto titular -->
+<!ELEMENT equipo (nombre, titulos, posicion, quinteto)>  
+
+<!-- Atributo obligatorio para la conferencia a la que pertenece el equipo -->
+<!ATTLIST equipo conferencia CDATA #REQUIRED>  
+
+<!-- Información del equipo: títulos ganados, posición en la liga y quinteto titular -->
+<!ELEMENT titulos (#PCDATA)>  
+<!ELEMENT posicion (#PCDATA)>  
+<!ELEMENT quinteto (#PCDATA)>  
+
+]>
+
+<!--Definicion de las etiquetas XML -->
+
+<EquiposNBA>
+    <equipo conferencia="ACB">
+        <nombre>Real Madrid</nombre>
+        <titulos>36</titulos>
+        <posicion>1</posicion>
+        <quinteto>Tavares, Llull, Hezonja, Musa, Campazzo</quinteto>
+    </equipo>
+    
+    <equipo conferencia="ACB">
+        <nombre>FC Barcelona</nombre>
+        <titulos>19</titulos>
+        <posicion>2</posicion>
+        <quinteto>Vesely, Laprovittola, Abrines, Kalinic, Satoransky</quinteto>
+    </equipo>
+</EquiposNBA>

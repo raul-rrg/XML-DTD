@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coche [
+<!ELEMENT coche (marca,
+fecha_de_matriculacion, caballos)>
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT fecha_de_matriculacion (#PCDATA)>
+<!ELEMENT caballos (#PCDATA)>
+]>
+<coche>
+<marca>Porsche</marca>
+<fecha_de_matriculacion>21-02-24</fecha_de_matriculacion>
+<caballos>500</caballos>
+</coche>

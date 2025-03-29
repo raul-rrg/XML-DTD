@@ -1,0 +1,22 @@
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [28/03/2025]
+Ejercicio-2: Liga-Baloncesto
+-->
+
+<!--Definimos las reglas DTD->
+
+<!-Definmos que el numero de jugadores de la liga--> 
+<!ELEMENT liga (jugador+)>
+<!--Definimos la secuencia del jugador y los elementos que debe de contener -->
+<!ELEMENT jugador (nombre, apellidos, equipo, edad)>
+<!--Definimos el tipo de dato de cada elemento -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT equipo (ciudad, presidente)>
+<!ELEMENT ciudad (#PCDATA)>
+<!ELEMENT presidente (nombrePresidente, apellidosPresidente)>
+<!ELEMENT nombrePresidente (#PCDATA)>
+<!ELEMENT apellidosPresidente (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>

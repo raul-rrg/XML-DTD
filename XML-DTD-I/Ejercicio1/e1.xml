@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [28/03/2025]
+Ejercicio-1: Biblioteca
+-->
+
+<!--Definimos las declaraciones del DTD-->
+<!DOCTYPE biblioteca [
+   <!--Definimos que los libros deben aparecer 3 veces-->
+    <!ELEMENT biblioteca (libro+)>
+   <!--Definimos los elementos de secuencia que tendra el libro --> 
+    <!ELEMENT libro (titulo, editorial, autor, paginas)>
+   <!--Por ultimo definimos el tipo de dato que contendra cada elemento--> 
+    <!ELEMENT titulo (#PCDATA)>
+    <!ELEMENT editorial (#PCDATA)>
+    <!ELEMENT autor (nombre, apellidos)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT apellidos (#PCDATA)>
+    <!ELEMENT paginas (#PCDATA)>
+]>
+
+<!--Definimos las etiquetas XML definidas anteriormente en el DTD-->
+<biblioteca>
+    <!--Definimos 3 libros junto con la informacion definida-->
+    <libro>
+        <titulo>Juego de Tronos</titulo>
+        <editorial>Bantam Books</editorial>
+        <autor>
+            <nombre>George R.R.</nombre>
+            <apellidos>Martin</apellidos>
+        </autor>
+        <paginas>694</paginas>
+    </libro>
+    
+    <libro>
+        <titulo>Los Juegos del Hambre</titulo>
+        <editorial>Scholastic</editorial>
+        <autor>
+            <nombre>Suzanne</nombre>
+            <apellidos>Collins</apellidos>
+        </autor>
+        <paginas>374</paginas>
+    </libro>
+    
+    <libro>
+        <titulo>Hábitos Atómicos</titulo>
+        <editorial>Avery</editorial>
+        <autor>
+            <nombre>James</nombre>
+            <apellidos>Clear</apellidos>
+        </autor>
+        <paginas>320</paginas>
+    </libro>
+</biblioteca>

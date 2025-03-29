@@ -1,0 +1,28 @@
+<!-- Factura con datos del emisor, cliente y productos -->
+<!ELEMENT factura (datos-emisor, datos-cliente, detalle-factura)>
+<!ATTLIST factura numero CDATA #REQUIRED fecha CDATA #REQUIRED>
+
+<!-- Datos del emisor y cliente: nombre, CIF y teléfono -->
+<!ELEMENT datos-emisor (nombre, cif, telefono)>
+<!ELEMENT datos-cliente (nombre, cif, telefono)>
+
+<!-- Información básica en texto simple -->
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+
+<!-- Detalle con productos comprados -->
+<!ELEMENT detalle-factura (linea+)>
+<!ATTLIST detalle-factura importe CDATA #REQUIRED>
+
+<!-- Cada línea representa un producto con descripción, cantidad, precio y oferta opcional -->
+<!ELEMENT linea (descripcion, cantidad, oferta?, pvp)>
+<!ATTLIST linea codigo-articulo ID #REQUIRED tipo (Libro|DVD|Varios) #IMPLIED>
+
+<!-- Datos del producto en texto simple -->
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT pvp (#PCDATA)>
+
+<!-- Oferta es un elemento vacío (opcional) -->
+<!ELEMENT oferta EMPTY>

@@ -1,0 +1,29 @@
+<!-- Estructura principal del aeropuerto con su nombre, vuelos y fecha -->
+<!ELEMENT aeropuerto (nombre, vuelos, fecha)>  
+
+<!-- Nombre del aeropuerto como texto simple -->
+<!ELEMENT nombre (#PCDATA)>  
+
+<!-- Los vuelos son una lista de uno o más vuelos -->
+<!ELEMENT vuelos (vuelo+)>  
+
+<!-- Cada vuelo tiene información sobre su diario (opcional), origen, destino y horarios -->
+<!ELEMENT vuelo (diario?, origen, destino, hora-salida, hora-llegada)>  
+
+<!-- El vuelo tiene atributos obligatorios como código y estado -->
+<!ATTLIST vuelo código ID #REQUIRED>  
+<!ATTLIST vuelo estado (C|E|R) "E">  
+
+<!-- El diario es un elemento vacío que puede aparecer en el vuelo -->
+<!ELEMENT diario EMPTY>  
+
+<!-- Origen y destino del vuelo son texto simple (país o ciudad) -->
+<!ELEMENT origen (#PCDATA)>  
+<!ELEMENT destino (#PCDATA)>  
+
+<!-- Horarios de salida y llegada como texto simple -->
+<!ELEMENT hora-salida (#PCDATA)>  
+<!ELEMENT hora-llegada (#PCDATA)>  
+
+<!-- La fecha es texto simple que representa la fecha -->
+<!ELEMENT fecha (#PCDATA)>  
