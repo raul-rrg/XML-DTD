@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [29/03/2025]
+Ejercicio-2
+-->
+<!DOCTYPE letras [
+   <!--La definición del DTD estaba incorrecta, ya que el elemento "letras" estaba definido para contener solo un 
+   elemento "letra", esto esta mal ya que tenemos varios elementos "letra". Para ello se corrigio añadiendo en el DTD
+   uno o más elementos "letra" dentro de "letras".-->
+   <!ELEMENT letras (letra+)>
+   <!ELEMENT letra (#PCDATA)>
+]>
+
+<letras>
+   <letra>m</letra>
+   <letra>uve doble</letra>
+</letras>

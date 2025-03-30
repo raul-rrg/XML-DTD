@@ -1,0 +1,1 @@
+#### Se permitio multiples apuntes y se definieron claramente los elementos de apunte que faltabann

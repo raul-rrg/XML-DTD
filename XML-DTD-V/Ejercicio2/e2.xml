@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+fecha: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [30/03/2025]
+Ejercicio-2
+-->
+
+<!DOCTYPE efemerides [
+   <!-- Se define que efemerides puede tener multiples efemeride, cada una con fecha y hecho -->
+   <!ELEMENT efemerides (efemeride)*> 
+   <!ELEMENT efemeride (fecha, hecho)> 
+   <!ELEMENT fecha (#PCDATA)> 
+   <!ELEMENT hecho (#PCDATA)> 
+]>
+
+<efemerides>
+   <efemeride>
+      <fecha>20 de julio de 1969</fecha>
+      <hecho>Llegada del hombre a la Luna</hecho>
+   </efemeride>
+   <efemeride>
+      <fecha>12 de octubre de 1492</fecha>
+      <hecho>Llegada de Colón a América</hecho>
+   </efemeride>
+   <efemeride>
+      <fecha>6 de abril de 1909</fecha>
+      <hecho>Llegada de Robert Peary al Polo Norte</hecho>
+   </efemeride>
+</efemerides>

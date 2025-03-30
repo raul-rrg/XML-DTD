@@ -1,0 +1,1 @@
+#### Se permitio tener multiples mensajes, se definieron sus elementos correctamente y se añadio la opcion de incluir "strong" dentro del texto

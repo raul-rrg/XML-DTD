@@ -1,0 +1,1 @@
+Se elimino el color negro fuera de las etiquetas para que todo estuviera dentro de los elementos color.

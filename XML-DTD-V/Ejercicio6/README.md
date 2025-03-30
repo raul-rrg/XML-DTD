@@ -1,0 +1,1 @@
+#### Se permitio multiples paises, unionEuropea y otan opcionales, y nombre como texto no vacio

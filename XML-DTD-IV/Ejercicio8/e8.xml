@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [29/03/2025]
+Ejercicio-8
+-->
+<!DOCTYPE agenda [
+   <!--Para corregirlo debemos declarar al menos un telefonoMovil en cada contacto 
+   ademas no de permite que "telefonoFijo" aparezca después de telefonoMovil-->
+   <!ELEMENT agenda (contacto*)>
+   <!ELEMENT contacto (nombre, telefonoFijo*, telefonoMovil+)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT telefonoFijo (#PCDATA)>
+   <!ELEMENT telefonoMovil (#PCDATA)>
+]>
+
+<agenda>
+   <contacto>
+      <nombre>Ayuntamiento</nombre>
+      <telefonoFijo>010</telefonoFijo>
+      <telefonoMovil>No disponible</telefonoMovil>
+   </contacto>
+   <contacto>
+      <nombre>Emergencias</nombre>
+      <telefonoFijo>112 (Unión Europea)</telefonoFijo>
+      <telefonoFijo>911 (Estados Unidos)</telefonoFijo>
+      <telefonoMovil>Desconocido</telefonoMovil>
+   </contacto>
+</agenda>

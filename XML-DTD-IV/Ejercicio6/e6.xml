@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [29/03/2025]
+Ejercicio-6
+-->
+<!DOCTYPE escritores [
+   <!--Cambio en el orden de los elemetnos el elemento "escritor" requiere que "nombre" aparezca antes que "nacimiento"-->
+   <!ELEMENT escritores (escritor*)>
+   <!ELEMENT escritor (nombre, nacimiento)>
+   <!ELEMENT nombre (#PCDATA)>
+   <!ELEMENT nacimiento (#PCDATA)>
+]>
+
+<escritores>
+   <escritor>
+      <nombre>Mario Vargas Llosa</nombre>
+      <nacimiento>28 de marzo de 1936</nacimiento>
+   </escritor>
+   <escritor>
+      <nombre>Milan Kundera</nombre>
+      <nacimiento>1 de abril de 1929</nacimiento>
+   </escritor>
+</escritores>

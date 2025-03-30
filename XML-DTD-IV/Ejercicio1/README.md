@@ -1,0 +1,1 @@
+#### Se cambio la DTD para que numeros tenga numero dentro en vez de texto

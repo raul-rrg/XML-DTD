@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de cantidad, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+nombre: [30/03/2025]
+Ejercicio-8
+-->
+
+<!DOCTYPE contabilidad [
+   <!-- Se permitio multiples apuntes, ademas se definio claramente los elementos de apunte que faltaban por definir-->
+   <!ELEMENT contabilidad (apunte*)>  
+   <!ELEMENT apunte ((ingreso | gasto), fecha, cantidad, concepto)>  
+   <!ELEMENT ingreso EMPTY>  
+   <!ELEMENT gasto EMPTY>  
+   <!ELEMENT fecha (#PCDATA)>  
+   <!ELEMENT cantidad (#PCDATA)>  
+   <!ELEMENT concepto (#PCDATA)>  
+]>
+
+<contabilidad>
+   <apunte>
+      <ingreso/>  
+      <fecha>24 de febrero de 2011</fecha>
+      <cantidad>1800.00€</cantidad>  
+      <concepto>Salario</concepto>
+   </apunte>
+   <apunte>
+      <gasto/>  
+      <fecha>28 de febrero de 2011</fecha>
+      <cantidad>74.25€</cantidad>  
+      <concepto>Recibo luz</concepto>
+   </apunte>
+</contabilidad>

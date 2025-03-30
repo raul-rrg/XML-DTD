@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+nombre: [30/03/2025]
+Ejercicio-3
+-->
+
+<!DOCTYPE areopuertos [
+   <!-- Los errores corregidos ahora permiten que areopuertos contengan multiples areopuertos,
+         ademas se definió cerrado como elemento opcional usando el operador '? -->
+   <!ELEMENT areopuertos (areopuerto)*> 
+   <!ELEMENT areopuerto (nombre, cerrado?)>  
+   <!ELEMENT nombre (#PCDATA)> 
+   <!ELEMENT cerrado (#PCDATA)> 
+]>
+
+<areopuertos>
+   <areopuerto>
+      <nombre>Berlín Shonefeld (SFX)</nombre>
+   </areopuerto>
+   <areopuerto>
+      <nombre>Berlín Tempelhof (THF)</nombre>
+      <cerrado/>  
+   </areopuerto>
+</areopuertos>

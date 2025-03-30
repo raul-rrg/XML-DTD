@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+nombre: [30/03/2025]
+Ejercicio-4
+-->
+
+<!DOCTYPE vuelos [
+   <!-- Se corrigió el DTD para permitir multiples vuelos -->
+   <!ELEMENT vuelos (vuelo*)> 
+   <!ELEMENT vuelo (origen, destino)>  
+   <!ELEMENT origen (#PCDATA)> 
+   <!ELEMENT destino (#PCDATA)> 
+]>
+
+<vuelos>
+   <vuelo>
+      <origen>Valencia (VLC)</origen>  
+      <destino>Londres Heathrow (LHR)</destino>
+   </vuelo>
+   <vuelo>
+      <origen>Paris Charles de Gaulle (CDG)</origen> 
+      <destino>Berlín Shonefeld (SFX)</destino>
+   </vuelo>
+</vuelos>

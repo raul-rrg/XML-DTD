@@ -1,0 +1,1 @@
+#### Se definio la secuencia de color y se hicieron rgb y cymk opcionales en codigo

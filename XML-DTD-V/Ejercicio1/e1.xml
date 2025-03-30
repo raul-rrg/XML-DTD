@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [30/03/2025]
+Ejercicio-1
+-->
+<!DOCTYPE favoritos [
+   <!-- Se define que 'favoritos' puede tener múltiples 'marcador', cada uno con 'nombre' y 'uri', ademas se define 
+   que la etiqueta marcadores ya que es la Raiz se debe llamar igual que el DTD -->
+   <!ELEMENT favoritos (marcador)*> 
+   <!ELEMENT marcador (nombre, uri)> 
+   <!ELEMENT nombre (#PCDATA)> 
+   <!ELEMENT uri (#PCDATA)> 
+]>
+
+<favoritos>
+   <marcador>
+      <nombre>W3C</nombre>
+      <uri>http://www.w3.org</uri>
+   </marcador>
+   <marcador>
+      <nombre>Web Hypertext Application Technology Working Group (WHATWG)</nombre>
+      <uri>http://www.w3.org</uri>
+   </marcador>
+</favoritos>

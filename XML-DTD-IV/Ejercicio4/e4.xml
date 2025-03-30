@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [29/03/2025]
+Ejercicio-4
+-->
+<!DOCTYPE flores [
+   <!--En la DTD declarabamos que permitiamos multiples elementos "flor", pero el contenido estaba vacio. 
+   Por ello se agrego al menos un elemento "flor" para que el XML pueda ser valido.-->
+   <!ELEMENT flores (flor*)>
+   <!ELEMENT flor (#PCDATA)>
+]>
+
+<flores>
+   <flor>Tulipan</flor>
+</flores>

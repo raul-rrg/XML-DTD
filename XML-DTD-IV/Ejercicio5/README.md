@@ -1,0 +1,1 @@
+#### Se cambiaron las etiquetas "perro" y "gato" por "animal" para cumplir con el DTD.

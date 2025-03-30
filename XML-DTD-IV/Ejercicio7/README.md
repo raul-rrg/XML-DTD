@@ -1,0 +1,1 @@
+#### Se elimino uno de los elementos "nombre" o "apodo" en cada musico para cumplir con el DTD.

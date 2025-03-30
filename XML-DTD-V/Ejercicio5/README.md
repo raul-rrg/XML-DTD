@@ -1,0 +1,1 @@
+#### Se añadio el elemento reina y se permitio elegir rey o reina opcionalmente

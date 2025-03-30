@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [29/03/2025]
+Ejercicio-9
+-->
+<!DOCTYPE sistemaSolar [
+   <!--La declaracion DTD solo permite un elmebto. Se corrigio separando los distintos elementos-->
+   <!ELEMENT sistemaSolar (cuerpo*)>
+   <!ELEMENT cuerpo (planeta | satelite | asteroide)>
+   <!ELEMENT planeta (#PCDATA)>
+   <!ELEMENT satelite (#PCDATA)>
+   <!ELEMENT asteroide (#PCDATA)>
+]>
+
+<sistemaSolar>
+   <cuerpo>
+      <planeta>Tierra</planeta>
+   </cuerpo>
+   <cuerpo>
+      <satelite>Luna</satelite>
+   </cuerpo>
+   <cuerpo>
+      <asteroide>Ceres</asteroide>
+   </cuerpo>
+</sistemaSolar>

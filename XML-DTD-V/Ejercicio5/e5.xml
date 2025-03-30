@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+nombre: [30/03/2025]
+Ejercicio-5
+-->
+
+<!DOCTYPE reyesEspañoles [
+   <!--Se añadio el elemento reina que faltaba ademas se puso que se pueda escoger rey y reina opcionalmente--> 
+   <!ELEMENT reyesEspañoles (rey* , reina*)>  
+   <!ELEMENT rey (nombre, padre, madre)>  
+   <!ELEMENT reina (nombre, padre, madre)>  
+   <!ELEMENT nombre (#PCDATA)> 
+   <!ELEMENT padre (#PCDATA)> 
+   <!ELEMENT madre (#PCDATA)> 
+]>
+
+<reyesEspañoles>
+   <rey>
+      <nombre>Felipe III</nombre>  
+      <padre>Felipe II</padre>
+      <madre>Ana de Austria</madre>
+   </rey>
+   <reina>
+      <nombre>Isabel la Católica</nombre>  
+      <padre>Juan II de Castilla</padre>
+      <madre>Isabel de Portugal</madre>
+   </reina>
+   <rey>
+      <nombre>Carlos I</nombre>  
+      <padre>Felipe el Hermoso</padre>
+      <madre>Juana la Loca</madre> 
+   </rey>
+</reyesEspañoles>

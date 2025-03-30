@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de texto, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+nombre: [30/03/2025]
+Ejercicio-9
+-->
+
+<!DOCTYPE mensajes [
+   <!-- Se permitio que se puedan tener multiples elementos mensajes y  se definieron correctamente sus elementos, 
+   ademas permitimos añadir strong dentro de texto -->
+   <!ELEMENT mensajes (mensaje*)>  
+   <!ELEMENT mensaje (de, para, hora, texto)> 
+   <!ELEMENT de (#PCDATA)>  
+   <!ELEMENT para (#PCDATA)>  
+   <!ELEMENT hora (#PCDATA)>  
+   <!ELEMENT texto (#PCDATA | strong)*> 
+   <!ELEMENT strong (#PCDATA)>  
+]>
+
+<mensajes>
+   <mensaje>
+      <de>Pepe (pepe@example.com)</de>  
+      <para>Juan (juan@example.com)</para>
+      <hora>28/02/2011 17:48:23,61</hora>  
+      <texto>¿Hola, Juan, qué haces?</texto>  
+   </mensaje>
+   <mensaje>
+      <de>Juan (juan@example.com)</de>
+      <para>Pepe (pepe@example.com)</para>  
+      <hora>28/02/2011 17:54:20,87</hora>  
+      <texto>Aquí, aprendiendo <strong>XML</strong></texto>  
+   </mensaje>
+</mensajes>

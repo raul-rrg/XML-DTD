@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+nombre: [30/03/2025]
+Ejercicio-6
+-->
+
+<!DOCTYPE paises [
+   <!--Se corrigio para permitir multiples paises ademas se hicieron unionEuropea y otan opcionales. Por ultimo
+   se indicio que el nombre deberia de ser texto no vacio -->
+   <!ELEMENT paises (pais*)>
+   <!ELEMENT pais (nombre, unionEuropea?, otan?)>  
+   <!ELEMENT nombre (#PCDATA)>  
+   <!ELEMENT unionEuropea EMPTY> 
+   <!ELEMENT otan EMPTY> 
+]>
+
+<paises>
+   <pais>
+      <nombre>España</nombre>  
+      <unionEuropea/>
+      <otan/>
+   </pais>
+   <pais>
+      <nombre>Noruega</nombre>  
+      <otan/>
+   </pais>
+   <pais>
+      <nombre>Austria</nombre>  
+      <unionEuropea/>
+   </pais>
+</paises>

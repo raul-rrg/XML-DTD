@@ -1,0 +1,1 @@
+#### Se definio que favoritos puede tener multiples marcador, cada uno con nombre y uri

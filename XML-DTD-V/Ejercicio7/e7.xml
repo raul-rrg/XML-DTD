@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+nombre: [30/03/2025]
+Ejercicio-7
+-->
+
+<!DOCTYPE colores [
+   <!-- Se añadio la definicion de la secuencia de color, ademas se añadió que en el emeneto codigo el rgb y el cymk son opcionales !-->
+   <!ELEMENT colores (color*)>  
+   <!ELEMENT color (nombreSvg, codigo)>  
+   <!ELEMENT codigo (rgb?, cymk?)> 
+   <!ELEMENT nombreSvg (#PCDATA)>  
+   <!ELEMENT rgb (#PCDATA)>  
+   <!ELEMENT cymk (#PCDATA)>  
+]>
+
+<colores>
+   <color>
+      <nombreSvg>Púrpura</nombreSvg>  
+      <codigo>
+         <rgb>#800080</rgb>
+      </codigo>
+   </color>
+   <color>
+      <nombreSvg>Purple</nombreSvg>  
+      <codigo>
+         <cymk>#00FF007F</cymk>  
+      </codigo>
+   </color>
+</colores>
