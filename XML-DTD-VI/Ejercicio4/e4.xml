@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [31/03/2025]
+Ejercicio-4: Lista de la Compra
+-->
+
+<!--La DTD no es modificada ya que el enunciado dice que los errores no estan alli-->
+<!--Se sustiyeron leche y pan ya que solo se permiten item en el DTD  -->
+<!--Por ello lo que hacemos es mover el nombre de los elementos al atributo nombre-->
+<!DOCTYPE listaCompra [
+   <!ELEMENT listaCompra (item*)>
+   <!ELEMENT item EMPTY>
+   <!ATTLIST item nombre CDATA #REQUIRED>   
+   <!ATTLIST item cantidad CDATA #REQUIRED> 
+]>
+
+<listaCompra>
+  <item nombre="leche" cantidad="12 litros"/>
+  <item nombre="pan" cantidad="3 barras de cuarto"/>
+</listaCompra>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [31/03/2025]
+Ejercicio-1: Datos-Personales
+-->
+
+<!--La DTD no es modificada ya que el enunciado dice que los errores no estan alli-->
+<!--Por ello la solucion implmentada es cambiar el atributo ya ya que no correpsponde con el DTD -->
+
+<!DOCTYPE persona [
+   <!ELEMENT persona EMPTY>
+   <!ATTLIST persona nombre CDATA #IMPLIED>   
+]>
+
+<persona nombre="Pedro" />

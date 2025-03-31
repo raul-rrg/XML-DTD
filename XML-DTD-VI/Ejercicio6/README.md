@@ -1,0 +1,1 @@
+### Se ajustaron los atributos nombre y jugadores para cumplir con las normas de NMTOKENS y IDREFS asegurando que los valores esten separados por espacios, siguiendo lo puesto en la DTD

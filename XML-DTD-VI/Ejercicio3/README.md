@@ -1,0 +1,1 @@
+### Se corrigieron los valores de los atributos para que sean únicos y se ajustó el orden de tituloy autor en el segundo cuadro

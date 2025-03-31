@@ -1,0 +1,1 @@
+#### Se elimino el atributo "genero" ya que no esta definido en la DTD

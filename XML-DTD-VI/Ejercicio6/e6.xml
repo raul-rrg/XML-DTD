@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [31/03/2025]
+Ejercicio-6: Jugadores y Equipos de Futbol
+-->
+
+<!--La DTD no es modificada ya que el enunciado dice que los errores no estan alli-->
+<!--En los atributos nombres tenemos que asegurarnos que venga separdo por espacios ya que el tipo NMTOKENS
+te obliga a ello, ademas el tipo IDREFS requiere que los valores sean una lista de ID's separados por espacios  -->
+<!DOCTYPE futbol [
+   <!ELEMENT futbol ((jugador | equipo)*)>
+   <!ELEMENT jugador EMPTY>
+   <!ATTLIST jugador nombre NMTOKENS #REQUIRED>   
+   <!ATTLIST jugador codigo ID #REQUIRED> 
+   <!ELEMENT equipo EMPTY>
+   <!ATTLIST equipo nombre CDATA #REQUIRED>
+   <!ATTLIST equipo jugadores IDREFS #IMPLIED>
+]>
+
+<futbol>
+  <jugador nombre="Alfredo Di Stéfano" codigo="ads"/>
+  <jugador nombre="Edson Arantes do Nascimento Pelé" codigo="ean"/>
+  <jugador nombre="Diego Armando Maradona" codigo="dam"/>
+  <jugador nombre="Johan Cruyff" codigo="jc"/>
+  <equipo nombre="Societá Sportiva Calcio Napoli" jugadores="dam"/>
+  <equipo nombre="Futbol Club Barcelona" jugadores="jc dam"/>
+</futbol>

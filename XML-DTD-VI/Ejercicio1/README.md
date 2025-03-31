@@ -1,0 +1,1 @@
+### Se corrigio el atributo "DNI" por "nombre" y se la asgino uno mismo para que coincida con la DTD definida
