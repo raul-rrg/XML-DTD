@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ropa [
+<!ELEMENT ropa (prenda)*>
+<!ELEMENT prenda ((talla | color), nombre)>
+<!ELEMENT talla (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+]>
+<ropa>
+    <prenda>
+        <talla>M</talla>
+        <nombre>Camiseta Puma</nombre>
+    </prenda>
+    <prenda>
+        <color>Azul</color>
+        <nombre>Pantalon de Adidas</nombre>
+    </prenda>
+</ropa>

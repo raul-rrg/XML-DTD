@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE deportistas [
+<!ELEMENT deportistas (futbol | f1)*>
+<!ELEMENT futbol (#PCDATA)>
+<!ELEMENT f1 (#PCDATA)>
+<!ATTLIST futbol codigo ID #REQUIRED>
+]>
+<deportistas>
+<futbol codigo="INI">Andrés Iniesta</futbol>
+<futbol codigo="XAV">Xavi Hernández</futbol>
+</deportistas>

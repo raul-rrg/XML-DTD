@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [6/04/2025]
+Ejercicio-4
+-->
+<!DOCTYPE resoluciones [
+<!-- Cambie el tipo de elemento resolucion a EMPTY para reflejar que es un elemento con atributos pero sin contenido
+  interno, despues los demas atributos se renombraron a CDATA. -->
+   <!ELEMENT resoluciones (resolucion+)>
+   <!ELEMENT resolucion EMPTY>
+   <!ATTLIST resolucion nombre CDATA #REQUIRED>
+   <!ATTLIST resolucion alto CDATA #REQUIRED>
+   <!ATTLIST resolucion ancho CDATA #REQUIRED>
+]>
+
+<resoluciones>
+ <resolucion nombre="VGA" alto="480" ancho="640" ></resolucion>
+ <resolucion nombre="XGA" alto="1024" ancho="768" ></resolucion>
+ <resolucion nombre="HD 1080" alto="1920" ancho="1080" ></resolucion>
+</resoluciones>

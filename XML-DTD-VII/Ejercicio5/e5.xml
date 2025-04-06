@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [6/04/2025]
+Ejercicio-5
+-->
+
+<!DOCTYPE albunesMortadelo [
+<!-- Cambie album a 'EMPTY' para usar solo atributos y  ademas restringi la 'fecha' a los años 1969-1974.. de forma sencuencial. -->
+   <!ELEMENT albunesMortadelo (album*)>
+   <!ELEMENT album EMPTY>
+   <!ATTLIST album nombre CDATA #REQUIRED>
+   <!ATTLIST album fecha (1969|1970|1971|1972|1973|1974) #REQUIRED>
+]>
+
+<albunesMortadelo>
+   <album nombre="El sulfato atómico" fecha="1969"></album>
+   <album nombre="La caja de diez cerrojos" fecha="1971"></album>
+   <album nombre="El otro yo del profesor Bacterio" fecha="1973"></album>
+   <album nombre="Los cacharros majaretas" fecha="1974"></album>
+</albunesMortadelo>

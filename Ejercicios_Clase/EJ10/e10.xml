@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca [
+<!ELEMENT biblioteca (escritores, libros)>
+<!ELEMENT escritores (escritor)*>
+<!ELEMENT escritor (#PCDATA)>
+<!ATTLIST escritor codesc ID #REQUIRED>
+<!ELEMENT libros (libro)*>
+<!ELEMENT libro (#PCDATA)>
+<!ATTLIST libro autoria IDREF #REQUIRED>
+]>
+<biblioteca>
+<escritores>
+<escritor codesc="CQ">Cervantes</escritor>
+<escritor codesc="SC">Suzanne Collins</escritor>
+</escritores>
+<libros>
+<libro autoria="CQ">Don Quijote de la Mancha</libro>
+<libro autoria="SC">Los juegos del hambre</libro>
+</libros>
+</biblioteca>

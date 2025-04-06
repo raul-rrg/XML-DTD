@@ -1,0 +1,1 @@
+#### Para este ejercicio Cambie el tipo de elemento resolucion a EMPTY para reflejar que es un elemento con atributos pero sin contenido interno, despues los demas atributos se renombraron a CDATA.

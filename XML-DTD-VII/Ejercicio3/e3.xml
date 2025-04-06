@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!--Añadimos la declarcion inicial en el que incluimos como atribito la version y el formato de codigo, esta 
+siempre debe ser la primera linea del documento XML-->
+
+<!--
+Nombre: Raul Rivera Garrido
+Curso: 1 º DAM
+Fecha: [6/04/2025]
+Ejercicio-3
+-->
+<!DOCTYPE cosasPorHacer [
+<!--"Se modificó la DTD para permitir que cosa contenga texto y para permitir multiples elementos cosa, por ello 
+eliminamos el atributo asunto-->
+   <!ELEMENT cosasPorHacer (cosa+)>
+   <!ELEMENT cosa (#PCDATA)>
+   <!ATTLIST cosa fecha CDATA #REQUIRED>
+   <!ATTLIST cosa fechaLimite CDATA #REQUIRED>
+]>
+
+<cosasPorHacer>
+ <cosa fecha="20 de febrero de 2011" fechaLimite="1 de marzo de 2011">
+ Preparar ejercicios de DTDs</cosa>
+ <cosa fecha="21 de febrero de 2011" fechaLimite="5 de marzo de 2011">
+ Preparar tema XSLT
+ </cosa>
+</cosasPorHacer>
